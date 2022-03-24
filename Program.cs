@@ -17,6 +17,9 @@ namespace _20200140140_Tugas2_A
                 con = new SqlConnection("data source= MADD\\AHMADMM; database=Kontrak_Tenant; User ID= sa; Password=root");
                 con.Open();
 
+                SqlCommand data1 = new SqlCommand("insert into owner (ID_owner, nama_owner, noHP_owner, alamat_owner, email_owner, jeniskelamin_owner) values ('1234567890123456','Mamad', '0812345678901', 'Jalan Manggis Nomor 01 Yogyakarta', 'mamad@gmail.com', 'L')", con);
+                data1.ExecuteNonQuery();
+
                 Console.WriteLine("Hooray, berhasil!");
                 Console.ReadKey();
             }
