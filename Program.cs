@@ -29,6 +29,9 @@ namespace _20200140140_Tugas2_A
                 SqlCommand data4 = new SqlCommand("insert into sertifikat (ID_sertifikat, ID_owner, ID_tenant) values ('10001','1234567890123456','001')", con);
                 data4.ExecuteNonQuery();
 
+                SqlCommand data5 = new SqlCommand("insert into transaksi (ID_sewa, ID_tenant, ID_customer, tanggal_mulai, tanggal_selesai, jenis_pembayaran) values ('101','001','0987654321098765','2022-02-22','2023-04-23','kredit')", con);
+                data5.ExecuteNonQuery();
+
                 Console.WriteLine("Hooray, berhasil!");
                 Console.ReadKey();
             }
