@@ -23,6 +23,9 @@ namespace _20200140140_Tugas2_A
                 SqlCommand data2 = new SqlCommand("insert into customer (ID_customer, nama_customer, noHP_customer, alamat_customer, email_customer, jenisKelamin_customer) values ('0987654321098765','Rahmat','0894710284752','Jalan Semangka Nomor 11 Yogyakarta','rahmat@gmail.com','L')", con);
                 data2.ExecuteNonQuery();
 
+                SqlCommand data3 = new SqlCommand("insert into tenant (ID_tenant, jenis_sewa, lama_sewa, harga_sewa, lokasi_tenant) values ('001','bulan', 3, 500000, 'Lantai 5 Blok C')", con);
+                data3.ExecuteNonQuery();
+
                 Console.WriteLine("Hooray, berhasil!");
                 Console.ReadKey();
             }
